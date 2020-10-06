@@ -19,14 +19,17 @@ void print(std::vector<std::string> &v) {
 
 int main() {
   std::vector<std::string> v; // creates vector v of strings
+  std::vector<std::string> j;
   std::vector<int> k; // creates vector of int
 
   v = {"emma", "dora", "ruth", "ziegellaub", "eichler"};
   k= {5,4,3,2,1};
-  std::cout << "Case 1: ";
- // MergeSort(v); // calls merge sort, passes vevtor v. 
+  
+  
  BubbleSort(v);
- InsertionSort(k);
-  print(v);
-  std::cout << "Expected: [dora, eichler, emma, ruth, ziegellaub]" << std::endl;
+InsertionSort(k);
+ MergeSort(j); // calls merge sort, passes vevtor v. 
+
+  //print(v);
+  //std::cout << "Expected: [dora, eichler, emma, ruth, ziegellaub]" << std::endl;
 }
