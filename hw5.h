@@ -1,12 +1,20 @@
 #ifndef __HW5_H__
 #define __HW5_H__
+#include <string>
+// header files that call functions 
+// add helper functions if needed 
 
 void BubbleSort(std::vector<std::string> &vec);
+static void Swap (std::string *i, std::string *j) ;
+
 // For this problem, implement the Bubble Sort (optimized so best case is O(n)) algorithm iteratively. 
 // Hint: given two strings str1 and str2, we can use str1.compare(str2). compare() returns 0 if the strings are equal,
 // < 0 if str1 comes first alphabetically, and > 0 if str2 comes first alphabetically.
+//////////////////////////////////////////////////////////////////////////
+static void InsertionHelper (std::vector<int> &vec, int n); // might be string 
+//n is size
+void InsertionSort(std::vector<int>& v); // string? 
 
-void InsertionSort(std::vector<std::string> &vec);
 // For this problem, re-implement the Insertion Sort algorithm recursively.
 // Rather than use a loop to go through each position we must insert into, use a recursive call. We want to insert the smallest element into the first position first and continue until we insert the largest element into the last position last. Remember that the last recursive call (the base case) finishes executing first and that the first recursive call finishes executing last.
 
