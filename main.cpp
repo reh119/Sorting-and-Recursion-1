@@ -23,11 +23,12 @@ int main() {
   std::vector<int> k; // creates vector of int
 
   v = {"emma", "dora", "ruth", "ziegellaub", "eichler"};
+  j={"ema", "dora", "ruth", "ziegellaub", "eichler"};
   k= {5,4,3,2,1};
   
   
  BubbleSort(v);
-InsertionSort(k);
+ InsertionSort(k); 
  MergeSort(j); // calls merge sort, passes vevtor v. 
 
   //print(v);
